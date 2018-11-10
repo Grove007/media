@@ -1,0 +1,303 @@
+body{font:16px"微软雅黑","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;color:#666;}
+/*取消 某些元素 默认的 margin，padding，列表项标志*/
+body,p,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,th,td,form,fieldset,legend,input,textarea,select{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{color:#2d374b;text-decoration:none}
+a:hover{
+    color:red;
+    text-decoration:underline;
+}
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+#section,#nav,#main,#foot_box{
+    /*宽度，水平居中对齐*/
+    width:1200px;
+    margin:0 auto;
+}
+
+/*头部固定框*/
+.header{
+    width:100%;
+    height:80px;
+    background:rgba(30,30,30,.9);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+}
+.header>div,
+footer>div{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.header>div>a{
+    display:block;
+    width:145px;
+    height:36px;
+    background:url(img/footlogo.png) no-repeat;
+    border:1px solid blue;
+}
+.header ul{
+    display:flex;
+    align-items:center;
+}
+.header ul li{
+    padding: 0 25px;
+}
+.header ul li a{
+    color:#fff;
+}
+.header ul li:nth-child(1) a{
+    color:#e31a49;
+}
+
+/*banner广告*/
+#banner{
+    width:100%;
+    height:240px;
+    margin-top:80px;
+}
+#banner img{
+    display:block;
+    width:100%;
+    height:240px;
+}
+
+/*主体内容展区*/
+#section{
+    margin-top:80px;
+    min-height:800px;
+}
+#top_main{
+    width:100%;
+    height:350px;
+    margin:0 auto;
+}
+#top_main p:nth-child(1){
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+#top_main p:nth-child(1) b{
+    font-size:26px;
+    letter-spacing:6px;
+}
+#top_main p:nth-child(1) span{
+    letter-spacing:3px;
+    color:#D0D6D7;  
+}
+#top_main p:not(.once){
+    margin-bottom:28px;
+    font-size:14px;
+    line-height:26px;
+    padding-left:3%;
+    
+}
+#top_main>ul{
+    color:#E71A49;
+    width:90%;
+    margin:0 auto;
+    margin-top:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#top_main>ul>li{
+    width:128px;
+    height:50px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#top_main>ul>li li{
+   font-size:12px;
+}
+
+
+/*视频区域*/
+#nav{
+    width:100%;
+    height:500px;
+}
+#nav video{
+   margin-left:15%;
+   margin-top:1%;
+}
+
+/*图片展示区域*/
+#main{
+    width:100%;
+    height:850px;
+    margin:50px auto;
+    background:#E6E6E6;
+}
+#main .once{
+    width:100%;
+    height:50px;
+    text-align:center;
+    margin-bottom:30px;
+    box-sizing:border-box;
+    padding-top:30px; 
+}
+#main .once b{
+    display:block;
+    font-size:24px;
+    letter-spacing:6px;
+    font-weight:normal;
+
+}
+#main .once span{
+    letter-spacing:3px;
+    color:#D0D6D7;  
+}
+#main ul{
+    width:100%;
+    height:680px;
+    margin-top:70px;
+    display:flex;
+    flex-wrap:wrap;
+}
+#main li{
+    width:18%;
+    height:240px;
+    margin-left:1.68%;
+    margin-top:12px;
+    transition:all 1s;
+}
+#main ul li:hover{
+    margin-top:-7px;
+}
+#main li img{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    transition:transform 1s;
+}
+#main li img:hover{
+    transform:scaleY(1.05);
+}
+#main li span{
+    display:block;
+    width:100%;
+    height:60px;
+    line-height:60px;
+    font-size:14px;
+    text-align:center;
+    background:#E8E3FA;
+    transition:all 1s;
+}
+#main li span:hover{
+    color:red;
+    font-size:16px;
+    background:#fff;
+}
+/*地图区域*/
+#second{
+    width:100%;
+    height:60px;
+    margin:0 auto;
+    margin-top:8%;
+    text-align:center;
+}
+#second b{
+    display:block;
+    font-size:24px;
+    letter-spacing:6px;
+    font-weight:normal;
+
+}
+#second span{
+    letter-spacing:3px;
+    color:#D0D6D7;
+}
+
+
+/*地图区域*/
+#mainland{
+    width:100%;
+    height:357px;
+    margin:0 auto;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+#foot_box{
+    width:100%;
+    height:120px;
+    text-align:center;
+}
+
+#foot_box p{
+    width:100%;
+    height:30px;
+    color:#000;
+}
+
+
+
+/*底部栏*/
+.footer{
+    width:100%;
+    padding: 50px 0;
+    background: #373737;
+}
+.footer>div{
+    height:100px;
+    display: flex;
+}
+.footer>div>div{
+    width:20%;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.footer>div>div:nth-child(2){
+    width:60%;
+    display: block;
+}
+.footer>div>div:nth-child(1) img{
+    width:80px;
+    height: 80px;
+}
+.footer h2{
+    font-size: 20px;
+    color:#fff;
+    font-weight: normal; 
+    margin-top:10px;
+}
+.footer p{
+    font-size: 14px;
+    color: #cdcdcd;
+}
+.footer .code{
+    display: inline-block;
+    width: 50%;
+    height:100%;
+    text-align: center;
+}
+.footer .code img{
+    width:60px;
+    height:60px;
+    margin-top:10px;
+}
+.footer .code span{
+    display: block;
+    font-size: 16px;
+    color:#fff;
+    margin-top:10px;
+}
+.footer .code span i{
+    font-style: normal;
+    color:#da3732;
+}
